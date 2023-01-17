@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/fonts.css" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <title>AstroNews</title>
+</head>
+<body>
+    <header id="header">
+    </header>   
+
+    <script>
+        $("#header").load("header.html");
+    </script>
+
+    <div id="main_container">
+        <h1>Cadastre-se</h1>
+        <form id="register_form" >
+            <div class="full-box">
+                <label for="email">E-mail</label>
+                <input class="conta" type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="3" data-required data-email-validate>
+            </div>
+
+            <div class="half-box spacing">
+                <label for="name">Nome</label>
+                <input class="conta" type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-max-length="16" data-only-letters>
+            </div>
+
+            <div class="half-box">
+                <label for="lastname">Sobrenome</label>
+                <input class="conta" type="text" name="lastname" id="lastname" placeholder="Digite seu sobrenome" data-required data-only-letters>
+            </div>
+
+            <div class=" half-box spacing">
+                <label for="password">Senha</label>
+                <input class="conta" type="password" name="password" id="password" placeholder="Digite sua senha" data-required data-password-validate>
+            </div>
+        
+            <div class=" half-box">
+                <label for="passconfirmation">Confirmação de senha</label>
+                <input class="conta" type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme a sua senha" data-required data-equal="password">
+            </div>
+
+            <div class="full-box">
+                <input class="check" type="checkbox" name="agreement" id="agreement" check-required>
+                <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de uso.</a></label>
+            </div>
+            
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Registrar">
+            </div>
+            
+        </form>
+    </div>
+
+    <p class="error-validation template"></p>
+
+    <footer id="footer"></footer>
+    
+    <script>
+        $("#footer").load("footer.html");
+    </script>
+    
+    <script src="js/script.js"></script>
+
+</body>
+</html>

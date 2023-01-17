@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="styles/fonts.css" rel="stylesheet">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <title>AstroNews</title>
+    </head>
+
+    <body>
+
+
+        <header id="header">
+        </header>   
+
+        <script>
+            $("#header").load("header.html");
+        </script>
+        
+        <main>
+            <aside>
+                <h2><span>Receba notícias</span></h2>
+                <h2>Da AstroNews</h2>
+
+                <p>
+                    Mentenha-se informado sobre tudo que acontece no mundo da astronomia. Crie uma conta gratuita e tenha acesso a nossos conteúdos.
+                </p>
+                
+                <form id="form_email" action="enviar.php" name="form" method="post"">
+                    <input type="text" placeholder="Nome" name="nome">
+                    <input type="email" placeholder="Email" name="email">
+                    <input type="submit" value="Enviar >" name="submit" id="enviar_mail">
+                </form>
+            </aside>
+
+            <article>
+                <img src="./components/images/astro.png">
+            </article>
+
+        </main>
+
+        <div id="noticias">
+            <h2>Notícias</h2>
+            <p>
+                Tenha acesso todos os dias a todas as notícias que circulam no mundo da astronomia. 
+            </p>
+        </div>
+
+        <div id="sobre">
+            <h2>Sobre</h2>
+            <p>
+                Um portal de notícias independentes feito para amantes de astronomia como você.
+            </p>
+        </div>
+
+        <footer id="footer">
+        </footer>
+        
+        <script>
+            $("#footer").load("footer.html");
+        </script>
+        
+    </body>
+</html>

@@ -18,7 +18,7 @@
 
     <div id="main_container">
         <h1>Cadastre-se</h1>
-        <form id="register_form" >
+        <form id="register_form" method="post" action="./php/processa.php">
             <div class="full-box">
                 <label for="email">E-mail</label>
                 <input class="conta" type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="3" data-required data-email-validate>
@@ -64,7 +64,7 @@
         $("#footer").load("footer.html");
     </script>
     
-    <script src="js/script.js"></script>
+    <script src="js/script_cadastro.js"></script>
 
 </body>
 </html>

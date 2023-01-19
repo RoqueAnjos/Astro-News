@@ -11,11 +11,14 @@ class Validator{
             'data-password-validate',
             'check-required'
         ]
+
+        this.passData = true;
     }
 
     //iniciar a validação de todos os campos
 
     validate(form){
+
         //resgata todas as validações
         let currentValidations = document.querySelectorAll('form .error-validation');
 
@@ -52,6 +55,7 @@ class Validator{
                 }
             }
         }, this);
+
     }
 
     //verifica se um input tem um número mínimo de caracteres
@@ -164,6 +168,7 @@ class Validator{
 
             inputParent.appendChild(template);
         }
+        this.passData = false;
     }
     
     //verifica se o input é requerido
@@ -179,6 +184,7 @@ class Validator{
     checkrequired(input){
         if(!input.checked){
             alert("Confirme que aceita os termos de uso");
+            this.passData = false;
         }
     }
 
@@ -196,13 +202,33 @@ let validator = new Validator();
 
 //evento que dispara as validações
 
+const formCadUsuario = document.getElementById("register_form");
+
+/// redireciona para a página inicial
+function redireciona(){
+    location.href="index.html";
+}
+
 window.onload = function(){
     console.log("página carregada");
 
-    submit.addEventListener("click", function(e){
+    submit.addEventListener("click", async(e) =>{
         e.preventDefault();
 
         //console.log("funcionou");
         validator.validate(form);
+
+        const dadosForm = new FormData(formCadUsuario);
+
+        if(validator.passData==true){
+            //chama o código processa.php
+            const dados = await fetch("./php/processa.php", {
+                method: "POST",
+                body: dadosForm
+            });
+
+            alert("Usuário cadastrado com sucesso!");
+            redireciona();
+        }
     });
 }

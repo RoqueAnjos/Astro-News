@@ -9,7 +9,7 @@ class Validator{
             'data-only-letters',
             'data-equal',
             'data-password-validate',
-            'check-required'
+            'check-required',
         ]
 
         this.passData = true;

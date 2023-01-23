@@ -4,12 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/style.css" rel="stylesheet">
+    <link href="styles/style_account.css" rel="stylesheet">
     <link href="styles/fonts.css" rel="stylesheet">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <title>AstroNews</title>
 </head>
 <body>
+
+    <header id="header">
+    </header>   
+
+    <script>
+        $("#header").load("header.html");
+    </script>
+
+    <div id="main_container">
+        <h1>Log-in</h1>
+
+        <form id="login_form" method="post" action="./php/login.php">
+           
+            <div class="full-box">
+                <input style="width: 95%;" class="conta" type="email" name="email" id="email" placeholder="Digite seu e-mail" data-required data-email-validate>
+            </div>
+
+            <div class="full-box">
+                <input style="width: 95%;" class="conta" type="password" name="password" id="password" placeholder="Digite sua senha" data-required>
+            </div>
+
+            <div class="full-box">
+                <input type="submit" id="btn-submit" value="Entrar">
+            </div>
+
+        </form>
+
+        <div style="margin-right: 20px; margin-top: 30px;">
+            <a href="conta.html"><p style="font-size: medium; color:  rgb(132, 14, 201); text-decoration: underline;">Criar conta</p></a>
+        </div>
+
+    </div>
+    
+    <p class="error-validation template" ></p>
+    
+    <footer id="footer"></footer>
+
+    <script>
+        $("#footer").load("footer.html");
+    </script>
+
+    <script src="js/script_login.js"></script>
     
 </body>
 </html>

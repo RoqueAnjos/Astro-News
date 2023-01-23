@@ -1,0 +1,369 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+    border: none;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscreva-se-btn:hover{
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+h1{
+    font-weight: 200;
+}
+
+main, #noticias{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+
+span{
+    color: rgb(132, 14, 201);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+    margin-left: -2px;
+}
+
+#astro{
+    width: 580px;
+}
+
+#noticias_img{
+    height: 350px;
+}
+
+#form_email{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+input, p{
+    display: block;
+    width: 90%;
+    margin-top: 24px;
+    height: 43px;
+    padding: 6px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+.spacing{
+    margin-right: 2.5%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    background-color: rgb(132, 14, 201);
+    color: white;
+    font-weight: bold;
+}
+
+#enviar_mail{
+    width: 50%;
+}
+
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+.notices-about-content h3{
+    font-weight: bold;
+}
+
+.notices-about-content h2{
+    font-weight: bold;
+    font-size: xx-large;
+    line-height: normal;
+}
+
+.section_about{
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.section_about h2{
+    font-weight: bold;
+    font-size: xx-large;
+    line-height: normal;
+}
+
+
+.notices-about-content .per-btn, 
+.notices-about-content .per-btn:focus {
+    color: #fff !important;
+}
+
+.per-btn {
+    position: relative;
+    margin: auto;
+    padding: 17px 22px 18px;
+    transition: all 0.2s ease; 
+  }
+  .per-btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      border-radius: 28px;
+      background-color: rgb(132, 14, 201); 
+      width: 56px;
+      height: 56px;
+      transition: all 0.3s ease; 
+  }
+  .per-btn span {
+      position: relative;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      vertical-align: middle; 
+  }
+  .per-btn i {
+      position: relative;
+      top: 1px;
+      margin-left: 10px;
+      transform: translateX(-5px);
+      transition: all 0.3s ease; 
+  }
+  .per-btn:hover::before {
+      width: 100%;
+      background-color: rgb(132, 14, 201); 
+    }
+  .per-btn:hover i {transform: translateX(0); }
+  .per-btn:active {transform: scale(0.96); }
+  .per-btn:hover span, .per-btn:hover i{color: #fff;}
+  
+
+.notices-about-content p{
+    font-size: medium;
+    
+}
+
+footer{
+    width: 100%;
+    margin-top: 70px;
+    position: relative;
+    bottom: 0;
+    height: 120px;    
+    text-align: center;
+    line-height: 60px;
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.section_noticias{
+    padding-top: 80px;
+    padding-bottom: 0px;
+}
+
+.section_noticias {
+    padding: 80px 0 0;
+    position: relative;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.noticias {
+    background-image: url(https://veja.abril.com.br/wp-content/uploads/2022/01/GettyImages-1362967316.jpg.jpg?quality=70&strip=info&w=1024);
+    background-color: rgb(132, 14, 201);
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.noticias{
+    position: inherit;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+@media screen and (max-width: 1200px){
+    header{
+        flex-direction: column;
+    }
+    
+    main{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    form{
+        margin: 0 auto;
+        width:  100%;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    img{
+        display: none;
+    }
+
+    ul{
+        text-align: center;
+    }
+
+}
+
+/* notices-about */
+.notices-about{padding:80px 0 0;position: relative;}
+.notices-about-main{
+    background-image: url(https://veja.abril.com.br/wp-content/uploads/2022/01/GettyImages-1362967316.jpg.jpg?quality=70&strip=info&w=1024);
+	position: inherit;
+	background-size: contain;
+	background-attachment: inherit;
+	background-repeat: no-repeat;
+	background-position: left center;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.notices-about-main::before {
+    content: '';
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+}
+
+.notices-about-content {
+    background: #181d38;
+    padding: 70px 60px;
+    margin: 40px 0;
+    border-radius: 0 20px 20px 0px;
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1240px;
+    }
+}
+
+@media (min-width: 1350px){
+    .container {
+        width: 1350px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container {
+        width: 1170px;
+    }
+}
+@media (min-width: 992px){
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 768px){
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px){
+    .col-lg-6 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px){
+    .col-lg-6 {
+        float: right;
+    }
+}
+
+.col-lg-6 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.noticias_content {
+    background: #181d38;
+    padding: 70px 60px;
+    margin: 40px 0;
+    border-radius: 0 20px 20px 0px;
+}

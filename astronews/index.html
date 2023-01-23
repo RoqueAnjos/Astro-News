@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="styles/style.css" rel="stylesheet">
+        <link href="styles/style_landing.css" rel="stylesheet">
+        <link href="styles/novo.css" rel="stylesheet">
         <link href="styles/fonts.css" rel="stylesheet">
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
         <title>AstroNews</title>
@@ -37,24 +38,45 @@
             </aside>
 
             <article>
-                <img src="./components/images/astro.png">
+                <img id="astro" src="./components/images/astro.png">
             </article>
 
         </main>
 
-        <div id="noticias">
-            <h2>Notícias</h2>
-            <p>
-                Tenha acesso todos os dias a todas as notícias que circulam no mundo da astronomia. 
-            </p>
-        </div>
+        <section class="notices-about" id="noticias">
+            <div class="container">
+                <div class="notices-about-main">
+                    <div class="row">
+                        <div class="col-lg-6"></div>
+                            <div class="col-lg-6">
+                                <div class="notices-about-content">
+                                    <h3>Noticias astronômicas</h3>
+                                    <h2>O melhor da astronomia todos os dias</h2>
+                                    <p>Uma nova forma de ver o universo. Aqui você acompanha todas as novidades que circulam no mundo da astronomia.</p>
+                                    <div class="button_wrapper" style="margin-top: 50px;">
+                                        <a href="#" class="per-btn about_us_btn">
+                                            <span style="color: white;">Ler mais &rarr;</span>
+                                            <i class="fa fa-long-arrow-alt-right"></i>
+                                        </a>
+                                        <style>                                     
+                                            .about_us_btn::before,
+                                            .about_us_btn:hover::before{
+                                                background-color: rgb(132, 14, 201); 
+                                            }
+                                        </style>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
 
-        <div id="sobre">
-            <h2>Sobre</h2>
-            <p>
-                Um portal de notícias independentes feito para amantes de astronomia como você.
-            </p>
-        </div>
+        </section> 
+
+        <section id="sobre", class="section_about">
+            <h2>Conheça mais</h2>
+
+        </section>
 
         <footer id="footer">
         </footer>

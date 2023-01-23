@@ -68,7 +68,7 @@ span{
 }
 
 p{
-    line-height: 20px;
+    line-height: 10px;
     max-width: 500px;
     font-family: poppinslight;
 }
@@ -95,6 +95,7 @@ img{
 
 #main_container a{
     color: rgb(132, 14, 201);
+    text-align: center;
 }
 
 .error_validation_template{
@@ -114,6 +115,14 @@ img{
     justify-content: space-between;
 }
 
+#login_form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
 .full-box{
     flex: 1 1 100%;
     position: relative;
@@ -126,14 +135,15 @@ img{
 
 input, label, p{
     display: block;
-    width: 80%;
-    margin-top: 20px;
+    width: 100%;
+    margin-top: -17px;
     height: 20px;
-    padding: 15px;
+    padding: 9px;
     border-radius: 20px;
     border: none;
     font-size: 15px;
 }
+
 
 input, label:focus{
     outline: none;
@@ -153,8 +163,8 @@ label{
     border-bottom: 2px solid #323232;
     padding: 10px;
     font-size: .9rem;
-    margin-bottom: 10px;
-    margin-top: 0px;
+    margin-bottom: 57px;
+    margin-top: 2px;
 }
 
 form [type="submit"]{

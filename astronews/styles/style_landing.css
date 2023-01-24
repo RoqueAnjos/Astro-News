@@ -130,7 +130,7 @@ form [type="submit"]:hover{
 }
 
 .section_about{
-    margin-top: 40px;
+    margin-top: 80px;
     justify-content: center;
 }
 
@@ -252,6 +252,7 @@ section{
 }
 
 @media screen and (max-width: 1200px){
+    
     header{
         flex-direction: column;
     }
@@ -259,9 +260,25 @@ section{
     main{
         flex-direction: column;
     }
-
+    
     h2{
         font-size: 38px;
+    }
+
+    main aside{
+        font-size: 38px;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    main aside p, h2{
+        text-align: center;
+    }
+
+    main aside p{
+        margin-left: 20px;
     }
 
     form{
@@ -281,6 +298,57 @@ section{
         text-align: center;
     }
 
+}
+
+.conhecer{
+    position: relative;
+}
+
+.blocos{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.containerBloco{
+    background-color: #181d38;
+    border: solid #181d38;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.blocoUnico{
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #181d38;
+}
+
+.section_about{
+    display: block;
+}
+
+.fotobloco{
+    height: 300px;
+    width: 400px;
+    position: inherit;
+    background-size: cover;
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-position: left center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.textoBloco{
+    width: 90%;
 }
 
 /* notices-about */

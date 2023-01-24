@@ -207,7 +207,6 @@ form [type="submit"]:hover{
 }
 
 footer{
-    background-color: rgb(132, 14, 201);
     width: 100%;
     margin-top: 70px;
     position: relative;
@@ -215,6 +214,9 @@ footer{
     height: 120px;    
     text-align: center;
     line-height: 60px;
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
 }
 
 @media screen and (max-width: 1200px){
